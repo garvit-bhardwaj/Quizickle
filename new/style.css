@@ -1,0 +1,22 @@
+.container{
+    /* justify-content: center; */
+    display:flex;
+    flex-direction: column;
+    transform:translate(30%,40%);
+    
+    
+    
+}
+.box{
+    border:1px solid black;
+    width:30%;
+    height:400px;
+}
+.option{
+    display:flex;
+   
+    
+}
+.btn1{
+    margin-left:347px;
+}
