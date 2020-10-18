@@ -11,7 +11,7 @@ if(isset($_POST['submit']))
     {
         $userright=1;
         $passright=1;
-        header("location:adminportal.php");
+        header("location:home_admin.php");
     }
     else
     {

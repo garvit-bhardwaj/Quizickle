@@ -48,8 +48,6 @@ if(isset($_POST['submit'])){
           header("location:userportal.php");
       } 
       else{
-        echo $pass; echo "<br>";
-        echo $checkpass;
           $passwrong=1;
           echo "<h3 id='1'>Wrong Password</h3>";
       }
