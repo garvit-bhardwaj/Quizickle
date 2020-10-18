@@ -157,7 +157,7 @@ function question_navigation()
   var post_id = $(this).attr('id');
   fetch(post_id);
  });
-    $("#post").on("contextmenu",function(){
+    $("#quizarea").on("contextmenu",function(){
        return false;
     }); 
 }); 
