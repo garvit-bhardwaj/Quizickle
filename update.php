@@ -31,13 +31,13 @@ include 'db.php';
          $ch  = @$_GET['ch'];
        //  $total   = $_POST['totalques'];
          for ($i = 1; $i <= $n; $i++) {
-             $qid  = $i;
+             $qid  = uniqid();
              $qns  = addslashes($_POST['qns' . $i]);
              $q3   = mysqli_query($connection, "INSERT INTO questable VALUES  (NULL,'$eid','$qid','$qns', '$ch','$i','$n')") or die();
-             $oaid = 1;
-             $obid = 2;
-             $ocid = 3;
-             $odid = 4;
+             $oaid =uniqid();
+             $obid =uniqid();
+             $ocid = uniqid();
+             $odid = uniqid();
              $a    = addslashes($_POST[$i . '1']);
              $b    = addslashes($_POST[$i . '2']);
              $c    = addslashes($_POST[$i . '3']);
